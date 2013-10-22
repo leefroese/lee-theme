@@ -1,0 +1,587 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../sass/base/b-normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../sass/base/b-normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../sass/base/b-normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 52, ../sass/base/b-normalize.scss */
+[hidden],
+template {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 66, ../sass/base/b-normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 76, ../sass/base/b-normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 88, ../sass/base/b-normalize.scss */
+a {
+  background: transparent; }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 96, ../sass/base/b-normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 105, ../sass/base/b-normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 118, ../sass/base/b-normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 127, ../sass/base/b-normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 136, ../sass/base/b-normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 144, ../sass/base/b-normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 152, ../sass/base/b-normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 162, ../sass/base/b-normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 174, ../sass/base/b-normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 183, ../sass/base/b-normalize.scss */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+/* line 191, ../sass/base/b-normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 199, ../sass/base/b-normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 208, ../sass/base/b-normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 215, ../sass/base/b-normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 219, ../sass/base/b-normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 231, ../sass/base/b-normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 239, ../sass/base/b-normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 251, ../sass/base/b-normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 263, ../sass/base/b-normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 274, ../sass/base/b-normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 288, ../sass/base/b-normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 300, ../sass/base/b-normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 312, ../sass/base/b-normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 327, ../sass/base/b-normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 337, ../sass/base/b-normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 347, ../sass/base/b-normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 358, ../sass/base/b-normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 371, ../sass/base/b-normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 380, ../sass/base/b-normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 390, ../sass/base/b-normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 403, ../sass/base/b-normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/***************************
+COLOURS
+***************************/
+/***************************
+FONTS
+***************************/
+/***************************
+PLACEHOLDERS
+***************************/
+/* line 38, ../sass/base/b-vars.scss */
+.hide {
+  display: none !important;
+  visibility: hidden; }
+
+/***************************
+PLACEHOLDERS
+***************************/
+/* line 1, ../sass/base/b-typography.scss */
+html {
+  font-size: 100%; }
+
+/* line 4, ../sass/base/b-typography.scss */
+body {
+  font: normal 1em/1.5 Helvetica, sans-serif;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 42, ../sass/base/b-typography.scss */
+a,
+a:active {
+  text-decoration: none; }
+
+/* line 46, ../sass/base/b-typography.scss */
+a:hover,
+a:focus {
+  text-decoration: underline; }
+
+/* line 1, ../sass/base/b-wordpress.scss */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 6, ../sass/base/b-wordpress.scss */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+/* line 11, ../sass/base/b-wordpress.scss */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+/* line 16, ../sass/base/b-wordpress.scss */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+/* line 21, ../sass/base/b-wordpress.scss */
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+/* line 26, ../sass/base/b-wordpress.scss */
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+/* line 31, ../sass/base/b-wordpress.scss */
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 35, ../sass/base/b-wordpress.scss */
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+/* line 40, ../sass/base/b-wordpress.scss */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 46, ../sass/base/b-wordpress.scss */
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+/* line 54, ../sass/base/b-wordpress.scss */
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 58, ../sass/base/b-wordpress.scss */
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+/* line 62, ../sass/base/b-wordpress.scss */
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+/* line 66, ../sass/base/b-wordpress.scss */
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+/* line 75, ../sass/base/b-wordpress.scss */
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* line 2, ../sass/layout.scss */
+html,
+body {
+  height: 100%; }
+
+/* line 7, ../sass/layout.scss */
+.wrap {
+  min-height: 100%; }
+
+/* line 11, ../sass/layout.scss */
+.main {
+  overflow: auto;
+  padding-bottom: 130px; }
+
+/* line 15, ../sass/layout.scss */
+.footer {
+  clear: both;
+  margin-top: -130px;
+  position: relative;
+  height: 130px; }
+
+/*Opera Fix*/
+/* line 22, ../sass/layout.scss */
+body:before {
+  /* thanks to Maleika (Kohoutec)*/
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+  /* thank you Erik J - negate effect of float*/ }
+
+@media print {
+  /* line 2, ../sass/base/b-print.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  /* Black prints faster: sanbeiji.com/archives/953 */
+  /* line 4, ../sass/base/b-print.scss */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline; }
+
+  /* line 5, ../sass/base/b-print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  /* line 6, ../sass/base/b-print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /* line 7, ../sass/base/b-print.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 8, ../sass/base/b-print.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /* line 9, ../sass/base/b-print.scss */
+  thead {
+    display: table-header-group; }
+
+  /* css-discuss.incutio.com/wiki/Printing_Tables */
+  /* line 10, ../sass/base/b-print.scss */
+  tr, img {
+    page-break-inside: avoid; }
+
+  @page {
+    margin: 0.5cm; }
+
+  /* line 12, ../sass/base/b-print.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  /* line 13, ../sass/base/b-print.scss */
+  h2, h3 {
+    page-break-after: avoid; } }

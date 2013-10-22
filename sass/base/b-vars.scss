@@ -1,0 +1,177 @@
+/***************************
+COLOURS
+***************************/
+
+$color1: #1e4292; //blue
+$color2: #0094ce; //light blue
+$color3: #ea7900; //orange
+$color4: #aaaaaa; //gray
+
+
+
+/***************************
+FONTS
+***************************/
+
+
+ 
+/***************************
+SPRITES
+***************************/
+
+$sprite: sprite-map("../i/sprite/*.png", $spacing: 20px, $repeat: no-repeat);
+
+
+
+
+/***************************
+PLACEHOLDERS
+***************************/
+
+
+// clearfix
+
+%clearfix {
+*zoom : 1;
+&:before,
+&:after {
+display: table;
+content : ""; }
+&:after {
+clear : both; } }
+
+
+// hidden
+
+%hidden {
+display : none !important;
+visibility : hidden; }
+.hide {
+	@extend %hidden;
+}
+
+%hide-text {
+display: block;
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden; }
+
+%invisible {
+visibility : hidden; }
+
+%visuallyhidden {
+overflow : hidden;
+position : absolute;
+clip : rect(0 0 0 0);
+height : 1px;
+width : 1px;
+margin : -1px;
+padding : 0;
+border : 0;
+
+	&.focusable {
+
+		&:active,
+		&:focus {
+		position : static;
+		clip : auto;
+		height : auto;
+		width : auto;
+		margin : 0;
+		overflow: visible; } 
+	} 
+}
+
+
+// @include overflow
+
+%text-overflow {
+overflow : hidden;
+text-overflow : ellipsis;
+white-space : nowrap; }
+
+
+// @include zero
+
+%zero {
+margin : 0;
+padding : 0; }
+
+
+
+
+/***************************
+MIXINS
+***************************/
+
+// rems for everything (turn pixel values to rems) - http://codepen.io/thejameskyle/pen/JmBjc
+
+$root-font-size: 16;
+
+@function parseInt($n) {
+  @return $n / ($n * 0 + 1);
+}
+
+@mixin rem($property, $values) {
+  $px : (); 
+  $rem: ();
+  
+  $root: $root-font-size;
+  
+  @each $value in $values {
+    @if $value == 0 or $value == auto {
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+    
+    @else if type-of($value) == number { 
+      $unit: unit($value);
+      $val: parseInt($value);
+      
+      @if $unit == "px" {
+        $px : append($px,  $value);
+        $rem: append($rem, ($val / $root + rem));
+      }
+      
+      @if $unit == "rem" {
+        $px : append($px,  ($val * $root + px));
+        $rem: append($rem, $value);
+      }
+    }
+    
+    @else {
+      $px : append($px,  $value);
+      $rem: append($rem, $value);
+    }
+  }
+  
+  @if $px == $rem {
+    #{$property}: $px;
+  } @else {
+    #{$property}: $px;
+    #{$property}: $rem;
+  } 
+}
+
+@function rem($value) {
+  $root: $root-font-size;
+  $val: parseInt($value);
+  $return: ();
+  
+  @if unit($value) == "px" {
+    $return: append($return, ($val / $root + rem));
+  } @else {
+    $return: append($return, ($val * $root + px));
+  }
+  
+  @return $return;
+}
+
+
+
+// Sprite Dimensions - http://stackoverflow.com/questions/17143641/map-sprite-height-and-map-sprite-width-not-being-translated
+
+@mixin sprite-dimensions($map, $sprite) {
+   height: image-height(sprite-file($map, $sprite));
+   width: image-width(sprite-file($map, $sprite)); 
+}
