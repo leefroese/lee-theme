@@ -33,7 +33,7 @@ add_image_size( 'slider', 1296, 200, true );
 
 // This theme uses wp_nav_menu() in one location.
 register_nav_menus( array(
-	'primary' => __( 'Primary Navigation', 'tpi' ),
+	'main' => __( 'Main Navigation', 'inside-scoop' ),
 ) );
 	
 	
