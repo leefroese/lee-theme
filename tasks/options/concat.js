@@ -1,9 +1,9 @@
 module.exports = {
   dist: {
     src: [
-      'js/libs/*.js',
-      'js/global.js'
+      '<%= path.js %>/libs/*.js',
+      '<%= path.js %>/global.js'
     ],
-    dest: 'js/build/production.js'
+    dest: '<%= path.js %>/build/production.js'
   }
 }

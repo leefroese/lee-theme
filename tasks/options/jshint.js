@@ -1,3 +1,3 @@
 module.exports = {
-  beforeconcat: ['<%= pkg.js %>/*.js']
+  beforeconcat: ['<%= path.js %>/global.js']
 }
