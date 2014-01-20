@@ -1,7 +1,7 @@
 module.exports = {
   dist: {
     options: {
-      outputStyle: 'expanded'
+      style: 'expanded'
     },
     files: {
       'css/build/master.css': 'css/master.scss'

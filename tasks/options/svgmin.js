@@ -11,7 +11,7 @@ module.exports = {
                 cwd: '<%= path.img %>/src',
                 src: ['**/*.svg'],
                 dest: '<%= path.img %>/svg',
-                ext: '.min.svg'
+                ext: '.svg'
             }]
 	}
 }
